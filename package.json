@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/imfaber/vue-stickykit/issues"
   },
-  "homepage": "https://github.com/imfaber/vue-stickykit#readme"
+  "homepage": "https://github.com/imfaber/vue-stickykit#readme",
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
 }
