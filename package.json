@@ -1,6 +1,6 @@
 {
   "name": "vue-stickykit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Sticky-kit plugin for Vue.js",
   "main": "src/vue-stickykit.js",
   "scripts": {
