@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import $ from 'jquery'
 
-const VueStickyKit = {
+export default {
   /**
    * install function
    * @param  {Vue} Vue
@@ -18,6 +18,4 @@ const VueStickyKit = {
     })
   }
 }
-
-export default VueStickyKit
 
