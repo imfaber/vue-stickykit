@@ -1,0 +1,26 @@
+{
+  "name": "vue-stickykit",
+  "version": "1.0.0",
+  "description": "Sticky-Kit plugin for Vue.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imfaber/vue-stickykit.git"
+  },
+  "keywords": [
+    "sticky-kit",
+    "sticky",
+    "vue",
+    "vue.js",
+    "plugin"
+  ],
+  "author": "Fabrizio Meinero",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/imfaber/vue-stickykit/issues"
+  },
+  "homepage": "https://github.com/imfaber/vue-stickykit#readme"
+}
