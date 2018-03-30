@@ -1,5 +1,5 @@
 /*!
- * Vue-Stickykit.js v1.0.1
+ * Vue-Stickykit.js v1.0.2
  * (c) 2018 Imfaber <imfaberdev@gmail.com>
  * Released under the MIT License.
  */
@@ -17,10 +17,16 @@ var index = {
   install: function (Vue) {
     Vue.directive('stick-in-parent', {
       bind(el, binding) {
-        window.jQuery = require('jquery');
+        window.jQuery = window.jQuery || require('jquery');
         require('sticky-kit/dist/sticky-kit.js');
         jQuery(document).ready(function () {
-          jQuery(el).stick_in_parent(binding.value);
+          var sticky = binding.value || {};
+          var options = sticky.options || {};
+          var events = sticky.on || {};
+          jQuery(el).stick_in_parent(options);
+          for (var i in events) {
+            jQuery(el).on(i, events[i]);
+          }
         });
       }
     });
