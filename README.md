@@ -26,25 +26,45 @@ Vue.use(VueStickyKit)
 
 ## Usage 
 
+#### Basic Sticking
 ```html
 <template>
-    <div v-stick-in-parent="stikyKitOptions">
+    <div v-stick-in-parent>
+        My sticky content
+    </div>
+</template>
+```
+
+#### Custom Sticking
+```html
+<template>
+    <div v-stick-in-parent="stikyKit">
         My sticky content
     </div>
 </template>
 
 <script>
-export default {
-    data () {
-      return {
-        // See http://leafo.net/sticky-kit/#reference
-        stikyKitOptions: {
-          parent: '.parent-class',
-          offset_top: 50
-        }
-      }
-    },
-}
+    export default {
+        data () {
+          return {
+            // See http://leafo.net/sticky-kit/#reference
+            stikyKit: {
+              options: {
+                parent: '.my-sticky-class',
+                offset_top: 50
+              },
+              on: {
+                'sticky_kit:stick': function(e) {
+                  console.log("has stuck!", e.target);
+                },
+                'sticky_kit:unstick': function(e) {
+                  console.log("has unstuck!", e.target);
+                },
+              }
+            }
+          }
+        },
+    }
 </script>
 ```
 
