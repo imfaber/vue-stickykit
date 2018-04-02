@@ -2,7 +2,7 @@
 
 A Vue.js(v2.x+) integration of <http://leafo.net/sticky-kit/>
 
-See also <https://imfaber.me/lab/theme-gulpifier>
+See also <https://imfaber.me/lab/sticky-kit-plugin-vuejs>
 
 ## Installation
 
