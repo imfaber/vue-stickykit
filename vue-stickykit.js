@@ -16,7 +16,7 @@ var index = {
    */
   install: function (Vue) {
     Vue.directive('stick-in-parent', {
-      bind(el, binding) {
+      bind: function(el, binding) {
         window.jQuery = window.jQuery || require('jquery');
         require('sticky-kit/dist/sticky-kit.js');
         jQuery(document).ready(function () {
