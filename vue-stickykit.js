@@ -1,6 +1,6 @@
 /*!
- * Vue-Stickykit.js v1.0.2
- * (c) 2018 Imfaber <imfaberdev@gmail.com>
+ * Vue-Stickykit.js v1.0.6
+ * (c) 2020 Imfaber <imfaberdev@gmail.com>
  * Released under the MIT License.
  */
 (function (global, factory) {
@@ -16,7 +16,7 @@ var index = {
    */
   install: function (Vue) {
     Vue.directive('stick-in-parent', {
-      bind: function(el, binding) {
+      bind: function (el, binding) {
         window.jQuery = window.jQuery || require('jquery');
         require('sticky-kit/dist/sticky-kit.js');
         jQuery(document).ready(function () {
